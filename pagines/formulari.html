@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!-- Declara que aquest document és HTML5 -->
+<html> <!-- Element arrel del document HTML -->
+    <head> <!-- Capçalera del document on s'inclouen metadades -->
+        <title>Mi pagina de prueba</title>
+    </head>
+    <body> <!-- Cos del document on es mostra el contingut -->
+        <ul> <!-- Llista no ordenada -->
+            <li><a href="../index.html">Index</a></li> <!-- Enllaç a la pàgina Index -->
+            <li><a href="./enllacos.html">Enllaços</a></li> <!-- Enllaç a la pàgina Enllaços -->
+            <li><a href="./taules.html">Taules</a></li> <!-- Enllaç a la pàgina Taules -->
+            <li><a href="./javascript.html">Javascript</a></li> <!-- Enllaç a la pàgina Javascript -->
+            <li><a href="./layout1.html">Layout 1</a></li> <!-- Enllaç a la pàgina Layout 1 -->
+            <li><a href="./layout2.html">Layout 2</a></li> <!-- Enllaç a la pàgina Layout 2 -->
+        </ul>
+        
+        <h1>Consultes</h1> <!-- Títol principal de la secció -->
+        
+        <form action="../documents/consultes_formulari.php"> <!-- Formulari que enviarà dades a consultes_formulari.php -->
+            <fieldset> <!-- Agrupa elements relacionats en un formulari -->
+                <legend>Dades personals:</legend> <!-- Títol del grup de camps -->
+                
+                <label for="nom">Nom:</label><br> <!-- Etiqueta per al camp de nom -->
+                <input id="nom" type="text" name="nom" placeholder="Escriu el teu nom"> <!-- Camp de text per al nom -->
+        
+                <label for="cognoms">Cognoms:</label> <!-- Etiqueta per al camp de cognoms -->
+                <input id="cognoms" type="text" name="cognoms" placeholder="Escriu els teus cognoms"> <!-- Camp de text per als cognoms -->
+        
+                <br>
+                <label for="e-mail">Correu:</label><br> <!-- Etiqueta per al camp de correu electrònic -->
+                <input id="e-mail" type="email" name="correu" placeholder="Escriu el teu correu"> <!-- Camp de text per al correu electrònic -->
+        
+                <br>
+                <label for="edat">Franja d'edat:</label><br> <!-- Etiqueta per al selector d'edat -->
+                <select id="edat" name="Franja d'edat"> <!-- Selector per triar la franja d'edat -->
+                    <option value="Menor de 13">Menor de 13</option> <!-- Opció per a menor de 13 anys -->
+                    <option value="Entre 14 i 17">Entre 14 i 17</option> <!-- Opció per a entre 14 i 17 anys -->
+                    <option value="Major de 18">Major de 18</option> <!-- Opció per a major de 18 anys -->
+                </select>
+                
+                <br>
+                <label for="residencia">Zona residencial</label> <!-- Etiqueta per a la zona residencial -->
+                
+                <input id="Barcelona" type="radio" name="residencia" checked> <!-- Botó de ràdio per a Barcelona, seleccionat per defecte -->
+                <label for="Barcelona">Barcelona</label> <!-- Etiqueta per al botó de ràdio Barcelona -->
+        
+                <input id="Baix llobregat" type="radio" name="residencia" /> <!-- Botó de ràdio per a Baix Llobregat -->
+                <label for="Baix llobregat">Baix Llobregat</label> <!-- Etiqueta per al botó de ràdio Baix Llobregat -->
+        
+                <input id="altres" type="radio" name="residencia" /> <!-- Botó de ràdio per a altres zones residencials -->
+                <label for="altres">Altres</label> <!-- Etiqueta per al botó de ràdio Altres -->
+        
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Consulta:</legend> <!-- Títol del grup de consulta -->
+        
+                <label for="Llenguatge de programació">Llenguatge de programació</label> <!-- Etiqueta per a llenguatges de programació -->
+        
+                <input id="php" type="checkbox" name="Llenguatge de programacio" checked> <!-- Casella de verificació per a PHP, seleccionada per defecte -->
+                <label for="php"> PHP</label>
+        
+                <input id="Javascript" type="checkbox" name="Llenguatge de programacio" /> <!-- Casella de verificació per a JavaScript -->
+                <label for="Javascript"> Javascript</label>
+        
+                <input id="Python" type="checkbox" name="Llenguatge de programacio" /> <!-- Casella de verificació per a Python -->
+                <label for="Python"> Python</label>
+        
+                <br>
+                
+                <br>
+                
+                <label for="Consulta"> Consulta</label> <!-- Etiqueta per al camp de consulta -->
+                
+                <br>
+                
+                <input id="missatge" type="text" name="missatge" placeholder="Escriu el teu missatge"> <!-- Camp de text per escriure la consulta -->
+            </fieldset>
+            
+            <br>
+            
+            <button type="submit">Enviar</button> <!-- Botó per enviar el formulari -->
+            <button type="reset">Reinciar</button> <!-- Botó per reiniciar el formulari -->
+        </form>
+    </body>    
+</html>
+
