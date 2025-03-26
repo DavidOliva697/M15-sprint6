@@ -62,5 +62,21 @@
 
     <div class="footer">
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function revealElements() {
+                let elements = document.querySelectorAll("#text1, #text2, #text3, #text4");
+                elements.forEach(element => {
+                    let position = element.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    if (position < windowHeight - 50) {
+                        element.classList.add("reveal");
+                    }
+                });
+            }
+            window.addEventListener("scroll", revealElements);
+            revealElements();
+        });
+    </script>
 </body>
 </html>
