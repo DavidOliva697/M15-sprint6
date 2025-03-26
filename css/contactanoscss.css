@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.header {
+    position: absolute;
+    top: 0%;
+    left: 17%;
+    width: 83%;
+    height: 10%;
+    background-color: rgb(54, 60, 152);
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    padding-top: 1%;
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Formulario */
+.container {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(54, 60, 152);
+    margin-bottom: 8px;
+}
+
+form input, form textarea, form select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: rgb(54, 60, 152);
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(54, 60, 152, 0.6);
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form select {
+    height: 45px;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgb(54, 60, 152);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: rgb(42, 47, 115);
+    transform: translateY(-3px);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+form button:focus {
+    outline: none;
+}
+
+/* Estilos para los campos requeridos */
+form input:required, form textarea:required, form select:required {
+    background-color: #f9f9f9;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+nav {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 15%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding-left: 30px;
+    height: 80%;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
