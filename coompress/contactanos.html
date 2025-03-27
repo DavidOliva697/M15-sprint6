@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta'ns</title>
+    <link rel="stylesheet" href="../css/style1.css">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Contacta'ns</h1>
+        <div class="imagen">
+            <img src="../imatges/Captura de pantalla de 2025-03-14 17-14-10.png" alt="Logo">
+            
+        </div>
+    </div>
+    <div class="container">
+        <form action="procesar_formulario.php" method="post">
+            <label for="name">Nom i Cognoms:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Correu Electrònic:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="phone">Telèfon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br>
+            <br>
+            <label for="subject">Assumpte:</label>
+            <input type="text" id="subject" name="subject" required>
+            <br>
+            <br>
+            <label for="message">Missatge:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
